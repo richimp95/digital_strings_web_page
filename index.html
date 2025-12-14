@@ -1,0 +1,942 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Strings</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Metropolis:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Metropolis:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Calendly widget -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+</head>
+<body>
+
+
+  <!-- HEADER CON IMAGEN -->
+  <header class="hero">
+    <img src="assets/hero-image.png" alt="Digital Strings - Innovacion medica" class="hero-image">
+    <div class="hero-overlay">
+      <div class="lang-switch" role="group" aria-label="Seleccionar idioma">
+        <button type="button" class="lang-btn is-active" data-lang="es">ES</button>
+        <button type="button" class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <picture class="hero-logo">
+        <source srcset="assets/DS_LOGOS-12.png" media="(max-width: 520px)">
+        <img src="assets/logo-blanco.png" alt="Digital Strings logo" class="logo" />
+      </picture>
+      <h1 data-i18n="hero.title">Disenamos innovacion medica accesible</h1>
+      <p class="hero-subtitle" data-i18n="hero.subtitle">Simulacion clinica, diseno 3D y productos listos para el quirofano.</p>
+      <p data-i18n="hero.tagline">Tecnologia 3D al servicio de la salud</p>
+      <div class="hero-ctas">
+        <a href="#productos" class="btn" data-i18n="hero.ctaProjects">Explora nuestros proyectos</a>
+        <a href="#" class="btn btn-secondary" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/diggroupgt/workshop-gratuito'});return false;" data-i18n="hero.ctaCall">Agenda una llamada</a>
+      </div>
+    </div>
+  </header>
+
+
+
+  <!-- SOBRE NOSOTROS -->
+  <section class="sobre">
+    <h1 data-i18n="about.title">Sobre Nosotros</h1>
+    <p class="sobre-subtitle" data-i18n="about.subtitle">Equipos medicos, diseno biomedico y manufactura aditiva para soluciones reales.</p>
+    <div class="sobre-contenido">
+      <div class="sobre-imagen">
+        <div class="sobre-imagen-marco">
+          <img src="assets/digiGrupalConLogo.jpg" alt="Equipo Digital Strings" loading="lazy">
+        </div>
+      </div>
+      <div class="sobre-texto">
+      <p data-i18n="about.p1">
+        En Digital Strings desarrollamos soluciones tecnologicas innovadoras para transformar la formacion medica, el diagnostico clinico y la gestion de pacientes. Desde 2019, hemos creado un ecosistema de productos y servicios que integra modelado 3D avanzado, simuladores medicos de bajo costo y herramientas digitales para clinicas y profesionales de la salud.
+      </p>
+      <p data-i18n="about.p2">
+        Nuestro equipo multidisciplinario -ingenieria, diseno biomedico, manufactura aditiva y tecnologia- trabaja bajo un enfoque de co-innovacion junto a instituciones medicas, universidades y profesionales del sector. Esto nos permite desarrollar dispositivos y soluciones que responden a problemas reales y generan un impacto tangible en la calidad del cuidado de los pacientes.
+      </p>
+      <p data-i18n="about.p3">
+        Creemos en la accesibilidad, la eficiencia y el uso inteligente de la tecnologia para mejorar la salud en la region. Nuestro compromiso es acompanhar a nuestros clientes en cada etapa: desde la idea, el prototipo y las pruebas, hasta la implementacion de soluciones listas para usar.
+      </p>
+      <ul class="sobre-badges">
+        <li data-i18n="about.badge1">5+ Anos creando simuladores clinicos</li>
+        <li data-i18n="about.badge2">30+ Proyectos para hospitales y universidades</li>
+        <li data-i18n="about.badge3">Laboratorio de manufactura aditiva propio</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- PRODUCTOS -->
+  <section class="productos" id="productos">
+    <h1 data-i18n="products.title">Productos y Soluciones</h1>
+    <div class="grid productos-grid">
+      <div class="producto" id="simuladores">
+        <h3 data-i18n="products.simulators.title">Simuladores Medicos</h3>
+        <p data-i18n="products.simulators.desc">Entrena habilidades clinicas con dispositivos realistas hechos a medida para cada especialidad.</p>
+        <div class="carousel" data-carousel="simuladores" data-carousel-source="assets/simuladores/" data-carousel-images="0.png,20.png,Foley.png,IMG_1005.png,Presion.png,ProtElectronicoPlaca.png,PrototipoMecanicoFinal.png" data-carousel-label="Simulador medico" data-carousel-empty="No hay simuladores disponibles." aria-label="Galeria de simuladores Medicos" role="region" tabindex="0">
+          <div class="carousel-track" data-carousel-track>
+            <div class="carousel-loading" aria-hidden="true">Cargando simuladores...</div>
+          </div>
+          <button class="carousel-control prev" type="button" data-carousel-prev aria-label="Anterior">&#10094;</button>
+          <button class="carousel-control next" type="button" data-carousel-next aria-label="Siguiente">&#10095;</button>
+        </div>
+      </div>
+      <div class="producto" id="productos-medicos">
+        <h3 data-i18n="products.medical.title">Productos Medicos</h3>
+        <p data-i18n="products.medical.desc">Instrumental terapeutico y de apoyo fabricado a partir de disenos digitales personalizados.</p>
+        <div class="carousel" data-carousel="productos-medicos" data-carousel-source="assets/productos_medicos/" data-carousel-images="1000037180_1.png,1000056334.png,1000069350.png,1000069402.png,1000069403.png,1000072922 (1).png,1000072922 (2).png,2.png,3.png,mascara_deportiva_04___14072025_3.png" data-carousel-label="Producto medico" data-carousel-empty="No hay productos disponibles." aria-label="Galeria de productos Medicos" role="region" tabindex="0">
+          <div class="carousel-track" data-carousel-track>
+            <div class="carousel-loading" aria-hidden="true">Cargando productos...</div>
+          </div>
+          <button class="carousel-control prev" type="button" data-carousel-prev aria-label="Anterior">&#10094;</button>
+          <button class="carousel-control next" type="button" data-carousel-next aria-label="Siguiente">&#10095;</button>
+        </div>
+      </div>
+      <div class="producto" id="modelos">
+        <h3 data-i18n="products.models.title">Modelos Anatomicos</h3>
+        <p data-i18n="products.models.desc">Modelos anatomicos impresos en 3D para docencia, investigacion y conversacion con pacientes.</p>
+        <div class="carousel" data-carousel="modelos-anatomicos" data-carousel-source="assets/modelos_anatomicos/" data-carousel-images="aneurysm_in_willis_polygon.png,image.png,image_1.png,kidneys.png" data-carousel-label="Modelo anatomico" data-carousel-empty="No hay modelos disponibles." aria-label="Galeria de modelos anatomicos" role="region" tabindex="0">
+          <div class="carousel-track" data-carousel-track>
+            <div class="carousel-loading" aria-hidden="true">Cargando modelos...</div>
+          </div>
+          <button class="carousel-control prev" type="button" data-carousel-prev aria-label="Anterior">&#10094;</button>
+          <button class="carousel-control next" type="button" data-carousel-next aria-label="Siguiente">&#10095;</button>
+        </div>
+      </div>
+      <div class="producto" id="soluciones">
+        <h3 data-i18n="products.solutions.title">Soluciones Digitales</h3>
+        <p data-i18n="products.solutions.desc">Soluciones digitales que integran flujos clinicos, simulacion virtual y seguimiento remoto.</p>
+        <div class="carousel" data-carousel="soluciones-digitales" data-carousel-source="assets/soluciones/" data-carousel-images="Gemini_Generated_Image_l6jeq0l6jeq0l6je.png,Gemini_Generated_Image_uckrinuckrinuckr.png,Gemini_Generated_Image_yx6fjqyx6fjqyx6f.png" data-carousel-label="Solucion digital" data-carousel-empty="No hay soluciones disponibles." aria-label="Galeria de soluciones digitales" role="region" tabindex="0">
+          <div class="carousel-track" data-carousel-track>
+            <div class="carousel-loading" aria-hidden="true">Cargando soluciones...</div>
+          </div>
+          <button class="carousel-control prev" type="button" data-carousel-prev aria-label="Anterior">&#10094;</button>
+          <button class="carousel-control next" type="button" data-carousel-next aria-label="Siguiente">&#10095;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contacto">
+    <div class="contacto-grid">
+      <div class="contacto-card contacto-card--info">
+        <p class="contacto-eyebrow" data-i18n="contact.eyebrow">Contactanos</p>
+        <h3 data-i18n="contact.title">Hablemos de tu proximo simulador</h3>
+        <p class="contacto-lead" data-i18n="contact.lead">Te respondemos en menos de 24h. Horario GT 9:00 - 18:00.</p>
+        <ul class="contacto-list">
+          <li>
+            <span class="contacto-icon contacto-icon--mail" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false"><path fill="currentColor" d="M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zm0 2v.35l8 4.65 8-4.65V7H4zm16 2.98-7.56 4.4a1.5 1.5 0 0 1-1.48 0L4 9.98V17h16V9.98z"/></svg>
+            </span>
+            <a href="mailto:info@digistrings.com" data-i18n="contact.email">info@digistrings.com</a>
+          </li>
+          <li>
+            <span class="contacto-icon contacto-icon--link" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false"><path fill="currentColor" d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.24 8.5h4.52V23H.24V8.5zM7.56 8.5h4.33v1.97h.06c.6-1.13 2.07-2.33 4.26-2.33 4.55 0 5.39 2.99 5.39 6.88V23h-4.52v-6.37c0-1.52-.03-3.48-2.12-3.48-2.12 0-2.45 1.66-2.45 3.37V23H7.56V8.5z"/></svg>
+            </span>
+            <a href="https://www.linkedin.com/company/digital-strings-gt" target="_blank" rel="noopener noreferrer" data-i18n="contact.linkedin">LinkedIn Digital Strings</a>
+          </li>
+          <li>
+            <span class="contacto-icon contacto-icon--pin" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 4.97 5.67 11.42 6.17 12l.83.96.83-.96C13.33 20.42 19 13.97 19 9a7 7 0 0 0-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+            </span>
+            <span data-i18n="contact.location">Ciudad de Guatemala - Remoto LATAM</span>
+          </li>
+        </ul>
+        <div class="contacto-badges">
+          <span data-i18n="contact.badge1">Respuesta <24h</span>
+          <span data-i18n="contact.badge2">Asesoria inicial 30 min</span>
+          <span data-i18n="contact.badge3">Proyectos a medida</span>
+        </div>
+      </div>
+
+      <div class="contacto-card contacto-card--cta">
+        <div class="contacto-card-header">
+          <h4 data-i18n="contact.call.title">Agenda una llamada</h4>
+          <p class="contacto-card-sub" data-i18n="contact.call.sub">Selecciona el horario que mejor te funcione.</p>
+        </div>
+        <div class="contacto-actions">
+          <a href="#" class="btn" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/diggroupgt/workshop-gratuito'});return false;" data-i18n="contact.call.btnCalendly">Calendly</a>
+          <a href="mailto:info@digistrings.com" class="btn btn-ghost" data-i18n="contact.call.btnEmail">Escribenos</a>
+        </div>
+        <div class="contacto-meta">
+          <span class="contacto-chip" data-i18n="contact.chip1">Espanol / Ingles</span>
+          <span class="contacto-chip" data-i18n="contact.chip2">Zoom o Meet</span>
+        </div>
+      </div>
+
+      <div class="contacto-card contacto-card--form">
+        <h4 data-i18n="contact.form.title">Contactanos</h4>
+        <p class="contacto-card-sub" data-i18n="contact.form.sub">Cuentanos brevemente que necesitas.</p>
+        <form class="contacto-form" data-formspree action="https://formspree.io/f/xrbnjjpr" method="POST">
+          <label class="contacto-field">
+            <span data-i18n="contact.form.nameLabel">Nombre</span>
+            <input type="text" name="nombre" placeholder="Tu nombre" required data-i18n-placeholder="contact.form.namePlaceholder">
+          </label>
+          <label class="contacto-field">
+            <span data-i18n="contact.form.emailLabel">Email</span>
+            <input type="email" name="email" placeholder="tu@email.com" required data-i18n-placeholder="contact.form.emailPlaceholder">
+          </label>
+          <label class="contacto-field">
+            <span data-i18n="contact.form.messageLabel">Mensaje</span>
+            <textarea name="mensaje" rows="3" placeholder="Cuentanos de tu proyecto" data-i18n-placeholder="contact.form.messagePlaceholder"></textarea>
+          </label>
+          <button type="submit" class="btn btn-block" data-i18n="contact.form.submit">Enviar mensaje</button>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+    <p class="contacto-powered" data-i18n="contact.powered">Powered by Digital Strings</p>
+  </footer>
+
+  <script>
+    (function () {
+      var IMAGE_PATTERN = /\.(?:jpe?g|png)$/i;
+      var SEQUENTIAL_EXTENSIONS = ['jpg', 'jpeg', 'png'];
+      var MAX_SEQUENTIAL_ITEMS = 60;
+      var MAX_SEQUENTIAL_MISSES = 3;
+      var lightbox = createLightbox();
+
+      function normalisePath(path) {
+        return (path || '').trim().replace(/\\/g, '/');
+      }
+
+      function addCandidate(store, baseUrl, candidate) {
+        candidate = normalisePath(candidate);
+        if (!candidate) {
+          return;
+        }
+
+        try {
+          var url = new URL(candidate, baseUrl);
+          if (!IMAGE_PATTERN.test(url.pathname)) {
+            return;
+          }
+
+          store.add(url.href);
+        } catch (error) {
+          // ignore invalid entries
+        }
+      }
+
+      function fetchManifest(source) {
+        try {
+          var baseUrl = new URL(source, window.location.href);
+          var manifestUrl = new URL('manifest.json', baseUrl);
+
+          return fetch(manifestUrl.href, { cache: 'no-store' })
+            .then(function (response) {
+              if (!response.ok) {
+                throw new Error('Manifest no disponible');
+              }
+
+              return response.json();
+            })
+            .then(function (entries) {
+              if (!Array.isArray(entries)) {
+                return [];
+              }
+
+              var matches = new Set();
+              entries.forEach(function (entry) {
+                addCandidate(matches, baseUrl, entry);
+              });
+
+              return Array.from(matches);
+            })
+            .catch(function () {
+              return [];
+            });
+        } catch (error) {
+          return Promise.resolve([]);
+        }
+      }
+
+      function probeImage(url) {
+        return fetch(url, { method: 'HEAD', cache: 'no-store' })
+          .then(function (response) {
+            if (response.ok) {
+              return true;
+            }
+
+            if (response.status === 405 || response.status === 501) {
+              var probeUrl = url + (url.indexOf('?') === -1 ? '?probe=1' : '&probe=1');
+              return fetch(probeUrl, { cache: 'no-store' })
+                .then(function (probeResponse) {
+                  return probeResponse.ok;
+                })
+                .catch(function () {
+                  return false;
+                });
+            }
+
+            return false;
+          })
+          .catch(function () {
+            var probeUrl = url + (url.indexOf('?') === -1 ? '?probe=1' : '&probe=1');
+            return fetch(probeUrl, { cache: 'no-store' })
+              .then(function (probeResponse) {
+                return probeResponse.ok;
+              })
+              .catch(function () {
+                return false;
+              });
+          });
+      }
+
+      function discoverSequentialImages(source) {
+        if (!source) {
+          return Promise.resolve([]);
+        }
+
+        var baseUrl;
+        try {
+          baseUrl = new URL(source, window.location.href);
+        } catch (error) {
+          return Promise.resolve([]);
+        }
+
+        var discovered = [];
+        var index = 0;
+        var misses = 0;
+
+        function tryIndex() {
+          if (index >= MAX_SEQUENTIAL_ITEMS || misses >= MAX_SEQUENTIAL_MISSES) {
+            return Promise.resolve(discovered);
+          }
+
+          return tryExtension(0).then(function (found) {
+            if (found) {
+              misses = 0;
+            } else {
+              misses += 1;
+            }
+
+            index += 1;
+            return tryIndex();
+          });
+        }
+
+        function tryExtension(extIndex) {
+          if (extIndex >= SEQUENTIAL_EXTENSIONS.length) {
+            return Promise.resolve(false);
+          }
+
+          var filename = index + '.' + SEQUENTIAL_EXTENSIONS[extIndex];
+          var candidateUrl = new URL(filename, baseUrl).href;
+
+          return probeImage(candidateUrl).then(function (exists) {
+            if (exists) {
+              discovered.push(candidateUrl);
+              return true;
+            }
+
+            return tryExtension(extIndex + 1);
+          });
+        }
+
+        return tryIndex();
+      }
+
+      function fetchImages(source) {
+        if (!source) {
+          return Promise.resolve([]);
+        }
+
+        var baseUrl = new URL(source, window.location.href);
+
+        return fetch(baseUrl.href)
+          .then(function (response) {
+            if (!response.ok) {
+              throw new Error('No se pudo listar la carpeta');
+            }
+
+            return response.text();
+          })
+          .then(function (html) {
+            var matches = new Set();
+            var anchorRegex = /href\s*=\s*["']([^"']+)["']/gi;
+            var match;
+
+            while ((match = anchorRegex.exec(html)) !== null) {
+              addCandidate(matches, baseUrl, match[1]);
+            }
+
+            if (!matches.size) {
+              var textRegex = /([^\s"'<>]+\.(?:jpe?g|png))/gi;
+              while ((match = textRegex.exec(html)) !== null) {
+                addCandidate(matches, baseUrl, match[1]);
+              }
+            }
+
+            return Array.from(matches).sort();
+          })
+          .catch(function () {
+            return [];
+          });
+      }
+
+      function buildSlides(track, sources, options) {
+        track.innerHTML = '';
+
+        var label = options && options.label ? options.label : 'Elemento';
+        var emptyMessage = options && options.empty ? options.empty : 'No hay elementos disponibles.';
+
+        if (!sources.length) {
+          var empty = document.createElement('div');
+          empty.className = 'carousel-empty';
+          empty.textContent = emptyMessage;
+          track.appendChild(empty);
+          return [];
+        }
+
+        return sources.map(function (src, index) {
+          var slide = document.createElement('div');
+          slide.className = 'carousel-slide' + (index === 0 ? ' is-active' : '');
+
+          var img = document.createElement('img');
+          img.src = src;
+
+          var cleanSrc = src.replace(/\\/g, '/');
+          var fileName = decodeURIComponent(cleanSrc.split('/').pop() || '')
+            .replace(/\.[^/.]+$/, '')
+            .replace(/[_-]+/g, ' ')
+            .trim();
+
+          img.alt = label + ' ' + (index + 1) + (fileName ? ' - ' + fileName : '');
+          slide.appendChild(img);
+          img.tabIndex = 0;
+          img.addEventListener('click', function () {
+            lightbox.open(img.src, img.alt);
+          });
+          img.addEventListener('keydown', function (event) {
+            if (event.key === 'Enter' || event.key === ' ') {
+              event.preventDefault();
+              lightbox.open(img.src, img.alt);
+            }
+          });
+          track.appendChild(slide);
+          return slide;
+        });
+      }
+
+      function setupCarousel(carousel, slides) {
+        if (!slides.length) {
+          return;
+        }
+
+        var activeIndex = slides.findIndex(function (slide) {
+          return slide.classList.contains('is-active');
+        });
+
+        if (activeIndex === -1) {
+          slides[0].classList.add('is-active');
+          activeIndex = 0;
+        }
+
+        carousel.setAttribute('aria-live', 'polite');
+        var dots = document.createElement('div');
+        dots.className = 'carousel-dots';
+        var counter = document.createElement('div');
+        counter.className = 'carousel-counter';
+        carousel.appendChild(counter);
+
+        function syncAria() {
+          slides.forEach(function (slide, index) {
+            slide.setAttribute('aria-hidden', index === activeIndex ? 'false' : 'true');
+          });
+          var dotButtons = dots.querySelectorAll('.carousel-dot');
+          dotButtons.forEach(function (dot, index) {
+            dot.classList.toggle('is-active', index === activeIndex);
+          });
+          counter.textContent = (activeIndex + 1) + ' / ' + slides.length;
+        }
+
+        syncAria();
+
+        function setActive(newIndex) {
+          slides[activeIndex].classList.remove('is-active');
+          activeIndex = (newIndex + slides.length) % slides.length;
+          slides[activeIndex].classList.add('is-active');
+          syncAria();
+        }
+
+        var prevButton = carousel.querySelector('[data-carousel-prev]');
+        var nextButton = carousel.querySelector('[data-carousel-next]');
+
+        if (prevButton) {
+          prevButton.addEventListener('click', function () {
+            setActive(activeIndex - 1);
+            restartAutoplay();
+          });
+        }
+
+        if (nextButton) {
+          nextButton.addEventListener('click', function () {
+            setActive(activeIndex + 1);
+            restartAutoplay();
+          });
+        }
+
+        carousel.addEventListener('keydown', function (event) {
+          if (event.key === 'ArrowLeft') {
+            event.preventDefault();
+            setActive(activeIndex - 1);
+            restartAutoplay();
+          } else if (event.key === 'ArrowRight') {
+            event.preventDefault();
+            setActive(activeIndex + 1);
+            restartAutoplay();
+          }
+        });
+
+        var pointerStart = null;
+
+        carousel.addEventListener('pointerdown', function (event) {
+          pointerStart = event.clientX;
+        });
+
+        carousel.addEventListener('pointerup', function (event) {
+          if (pointerStart === null) {
+            return;
+          }
+
+          var deltaX = event.clientX - pointerStart;
+          if (Math.abs(deltaX) > 30) {
+            setActive(deltaX < 0 ? activeIndex + 1 : activeIndex - 1);
+            restartAutoplay();
+          }
+
+          pointerStart = null;
+        });
+
+        carousel.addEventListener('pointerleave', function () {
+          pointerStart = null;
+        });
+
+        slides.forEach(function (_, index) {
+          var dot = document.createElement('button');
+          dot.type = 'button';
+          dot.className = 'carousel-dot' + (index === activeIndex ? ' is-active' : '');
+          dot.setAttribute('aria-label', 'Ir al elemento ' + (index + 1));
+          dot.addEventListener('click', function () {
+            setActive(index);
+            restartAutoplay();
+          });
+          dots.appendChild(dot);
+        });
+
+        if (slides.length > 1) {
+          carousel.appendChild(dots);
+        }
+
+        var autoplayId = null;
+
+        function startAutoplay() {
+          if (slides.length <= 1) {
+            return;
+          }
+          stopAutoplay();
+          autoplayId = window.setInterval(function () {
+            setActive(activeIndex + 1);
+          }, 4200);
+        }
+
+        function stopAutoplay() {
+          if (autoplayId !== null) {
+            window.clearInterval(autoplayId);
+            autoplayId = null;
+          }
+        }
+
+        function restartAutoplay() {
+          stopAutoplay();
+          startAutoplay();
+        }
+
+        carousel.addEventListener('mouseenter', stopAutoplay);
+        carousel.addEventListener('mouseleave', startAutoplay);
+        carousel.addEventListener('focusin', stopAutoplay);
+        carousel.addEventListener('focusout', startAutoplay);
+
+        startAutoplay();
+      }
+
+      function resolveFallbackList(carousel, source) {
+        var listAttr = carousel.getAttribute('data-carousel-images');
+        if (!listAttr) {
+          return [];
+        }
+
+        var base = source ? new URL(source, window.location.href) : new URL(window.location.href);
+
+        return listAttr
+          .split(',')
+          .map(function (item) {
+            return item.trim();
+          })
+          .filter(Boolean)
+          .map(function (item) {
+            item = item.replace(/\\/g, '/');
+            try {
+              return new URL(item, base).href;
+            } catch (error) {
+              return null;
+            }
+          })
+          .filter(Boolean);
+      }
+
+      function initCarousel(carousel) {
+        var track = carousel.querySelector('[data-carousel-track]');
+        if (!track) {
+          return;
+        }
+
+        var source = carousel.getAttribute('data-carousel-source');
+        var label = carousel.getAttribute('data-carousel-label') || 'Elemento';
+        var emptyMessage = carousel.getAttribute('data-carousel-empty') || 'No hay elementos disponibles.';
+        var renderSlides = function (sources) {
+          var slides = buildSlides(track, sources, { label: label, empty: emptyMessage });
+          setupCarousel(carousel, slides);
+        };
+
+        var predefined = resolveFallbackList(carousel, source);
+        if (predefined.length) {
+          renderSlides(predefined);
+          return;
+        }
+
+        if (!source) {
+          renderSlides([]);
+          return;
+        }
+
+        fetchImages(source)
+          .then(function (sources) {
+            if (sources.length) {
+              return sources;
+            }
+
+            return fetchManifest(source);
+          })
+          .then(function (sources) {
+            if (sources.length) {
+              return sources;
+            }
+
+            return discoverSequentialImages(source);
+          })
+          .then(function (sources) {
+            renderSlides(sources);
+          })
+          .catch(function () {
+            renderSlides([]);
+          });
+      }
+
+      function boot() {
+        var carousels = document.querySelectorAll('[data-carousel]');
+        carousels.forEach(initCarousel);
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', boot);
+      } else {
+        boot();
+      }
+
+      function createLightbox() {
+        var overlay = document.createElement('div');
+        overlay.className = 'lightbox';
+        overlay.setAttribute('data-lightbox', '');
+
+        var dialog = document.createElement('figure');
+        dialog.className = 'lightbox-dialog';
+        dialog.setAttribute('role', 'dialog');
+        dialog.setAttribute('aria-modal', 'true');
+        dialog.setAttribute('aria-label', 'Vista ampliada');
+
+        var closeButton = document.createElement('button');
+        closeButton.type = 'button';
+        closeButton.className = 'lightbox-close';
+        closeButton.setAttribute('data-lightbox-close', '');
+        closeButton.setAttribute('aria-label', 'Cerrar');
+        closeButton.innerHTML = '&#10005;';
+
+        var image = document.createElement('img');
+        image.className = 'lightbox-image';
+        image.alt = '';
+
+        dialog.appendChild(closeButton);
+        dialog.appendChild(image);
+        overlay.appendChild(dialog);
+        document.body.appendChild(overlay);
+
+        function close() {
+          overlay.classList.remove('is-open');
+          image.src = '';
+        }
+
+        function open(src, altText) {
+          image.src = src;
+          image.alt = altText || 'Vista ampliada';
+          overlay.classList.add('is-open');
+          closeButton.focus({ preventScroll: true });
+        }
+
+        overlay.addEventListener('click', function (event) {
+          if (event.target === overlay || event.target.hasAttribute('data-lightbox-close')) {
+            close();
+          }
+        });
+
+        document.addEventListener('keydown', function (event) {
+          if (event.key === 'Escape' && overlay.classList.contains('is-open')) {
+            close();
+          }
+        });
+
+        return {
+          open: open,
+          close: close
+        };
+      }
+    })();
+  </script>
+  <script>
+    (function () {
+      var translations = {
+        es: {
+          'hero.title': 'Disenamos innovacion medica accesible',
+          'hero.subtitle': 'Simulacion clinica, diseno 3D y productos listos para el quirofano.',
+          'hero.tagline': 'Tecnologia 3D al servicio de la salud',
+          'hero.ctaProjects': 'Explora nuestros proyectos',
+          'hero.ctaCall': 'Agenda una llamada',
+          'about.title': 'Sobre Nosotros',
+          'about.subtitle': 'Equipos medicos, diseno biomedico y manufactura aditiva para soluciones reales.',
+          'about.p1': 'En Digital Strings desarrollamos soluciones tecnologicas innovadoras para transformar la formacion medica, el diagnostico clinico y la gestion de pacientes. Desde 2019, hemos creado un ecosistema de productos y servicios que integra modelado 3D avanzado, simuladores medicos de bajo costo y herramientas digitales para clinicas y profesionales de la salud.',
+          'about.p2': 'Nuestro equipo multidisciplinario -ingenieria, diseno biomedico, manufactura aditiva y tecnologia- trabaja bajo un enfoque de co-innovacion junto a instituciones medicas, universidades y profesionales del sector. Esto nos permite desarrollar dispositivos y soluciones que responden a problemas reales y generan un impacto tangible en la calidad del cuidado de los pacientes.',
+          'about.p3': 'Creemos en la accesibilidad, la eficiencia y el uso inteligente de la tecnologia para mejorar la salud en la region. Nuestro compromiso es acompanhar a nuestros clientes en cada etapa: desde la idea, el prototipo y las pruebas, hasta la implementacion de soluciones listas para usar.',
+          'about.badge1': '5+ Anos creando simuladores clinicos',
+          'about.badge2': '30+ Proyectos para hospitales y universidades',
+          'about.badge3': 'Laboratorio de manufactura aditiva propio',
+          'products.title': 'Productos y Soluciones',
+          'products.simulators.title': 'Simuladores Medicos',
+          'products.simulators.desc': 'Entrena habilidades clinicas con dispositivos realistas hechos a medida para cada especialidad.',
+          'products.medical.title': 'Productos Medicos',
+          'products.medical.desc': 'Instrumental terapeutico y de apoyo fabricado a partir de disenos digitales personalizados.',
+          'products.models.title': 'Modelos Anatomicos',
+          'products.models.desc': 'Modelos anatomicos impresos en 3D para docencia, investigacion y conversacion con pacientes.',
+          'products.solutions.title': 'Soluciones Digitales',
+          'products.solutions.desc': 'Soluciones digitales que integran flujos clinicos, simulacion virtual y seguimiento remoto.',
+          'contact.eyebrow': 'Contactanos',
+          'contact.title': 'Hablemos de tu proximo simulador',
+          'contact.lead': 'Te respondemos en menos de 24h. Horario GT 9:00 - 18:00.',
+          'contact.email': 'info@digistrings.com',
+          'contact.linkedin': 'LinkedIn Digital Strings',
+          'contact.location': 'Ciudad de Guatemala - Remoto LATAM',
+          'contact.badge1': 'Respuesta <24h',
+          'contact.badge2': 'Asesoria inicial 30 min',
+          'contact.badge3': 'Proyectos a medida',
+          'contact.call.title': 'Agenda una llamada',
+          'contact.call.sub': 'Selecciona el horario que mejor te funcione.',
+          'contact.call.btnCalendly': 'Calendly',
+          'contact.call.btnEmail': 'Escribenos',
+          'contact.chip1': 'Espanol / Ingles',
+          'contact.chip2': 'Zoom o Meet',
+          'contact.form.title': 'Contactanos',
+          'contact.form.sub': 'Cuentanos brevemente que necesitas.',
+          'contact.form.nameLabel': 'Nombre',
+          'contact.form.emailLabel': 'Email',
+          'contact.form.messageLabel': 'Mensaje',
+          'contact.form.namePlaceholder': 'Tu nombre',
+          'contact.form.emailPlaceholder': 'tu@email.com',
+          'contact.form.messagePlaceholder': 'Cuentanos de tu proyecto',
+          'contact.form.submit': 'Enviar mensaje',
+          'contact.form.statusSending': 'Enviando...',
+          'contact.form.statusSuccess': 'Mensaje enviado. ¡Gracias!',
+          'contact.form.statusError': 'No se pudo enviar. Intenta de nuevo.',
+          'contact.form.statusConfig': 'Agrega tu endpoint Formspree para enviar.',
+          'contact.powered': 'Powered by Digital Strings'
+        },
+        en: {
+          'hero.title': 'We design accessible medical innovation',
+          'hero.subtitle': 'Clinical simulation, 3D design, and products ready for the OR.',
+          'hero.tagline': '3D technology at the service of health',
+          'hero.ctaProjects': 'Explore our projects',
+          'hero.ctaCall': 'Book a call',
+          'about.title': 'About Us',
+          'about.subtitle': 'Medical devices, biomedical design, and additive manufacturing for real solutions.',
+          'about.p1': 'At Digital Strings we build innovative technology to transform medical training, clinical diagnostics, and patient management. Since 2019, we have created an ecosystem of products and services that integrates advanced 3D modeling, affordable medical simulators, and digital tools for clinics and healthcare professionals.',
+          'about.p2': 'Our multidisciplinary team—engineering, biomedical design, additive manufacturing, and technology—co-innovates with medical institutions, universities, and professionals. This lets us deliver devices and solutions that solve real problems and create tangible impact on patient care.',
+          'about.p3': 'We believe in accessibility, efficiency, and the smart use of technology to improve health in the region. We partner with clients at every stage: from idea, prototype, and testing, to production-ready solutions.',
+          'about.badge1': '5+ years building clinical simulators',
+          'about.badge2': '30+ projects for hospitals and universities',
+          'about.badge3': 'In-house additive manufacturing lab',
+          'products.title': 'Products & Solutions',
+          'products.simulators.title': 'Medical Simulators',
+          'products.simulators.desc': 'Train clinical skills with realistic devices tailored to each specialty.',
+          'products.medical.title': 'Medical Products',
+          'products.medical.desc': 'Therapeutic and support instruments built from custom digital designs.',
+          'products.models.title': 'Anatomical Models',
+          'products.models.desc': '3D-printed anatomical models for teaching, research, and patient conversations.',
+          'products.solutions.title': 'Digital Solutions',
+          'products.solutions.desc': 'Digital solutions that integrate clinical workflows, virtual simulation, and remote follow-up.',
+          'contact.eyebrow': 'Contact',
+          'contact.title': 'Let’s talk about your next simulator',
+          'contact.lead': 'We reply in under 24h. GT time 9:00 - 18:00.',
+          'contact.email': 'info@digistrings.com',
+          'contact.linkedin': 'LinkedIn Digital Strings',
+          'contact.location': 'Guatemala City - Remote LATAM',
+          'contact.badge1': 'Reply <24h',
+          'contact.badge2': '30-min intro call',
+          'contact.badge3': 'Custom projects',
+          'contact.call.title': 'Book a call',
+          'contact.call.sub': 'Pick the time that suits you best.',
+          'contact.call.btnCalendly': 'Open Calendly',
+          'contact.call.btnEmail': 'Email us',
+          'contact.chip1': 'Spanish / English',
+          'contact.chip2': 'Zoom or Meet',
+          'contact.form.title': 'Send a message',
+          'contact.form.sub': 'Tell us briefly what you need.',
+          'contact.form.nameLabel': 'Name',
+          'contact.form.emailLabel': 'Email',
+          'contact.form.messageLabel': 'Message',
+          'contact.form.namePlaceholder': 'Your name',
+          'contact.form.emailPlaceholder': 'you@email.com',
+          'contact.form.messagePlaceholder': 'Tell us about your project',
+          'contact.form.submit': 'Send message',
+          'contact.form.statusSending': 'Sending...',
+          'contact.form.statusSuccess': 'Message sent. Thank you!',
+          'contact.form.statusError': 'Could not send. Please try again.',
+          'contact.form.statusConfig': 'Add your Formspree endpoint to enable sending.',
+          'contact.powered': 'Powered by Digital Strings'
+        }
+      };
+
+      var langButtons = document.querySelectorAll('.lang-btn[data-lang]');
+      var langSwitch = document.querySelector('.lang-switch');
+
+      function applyLanguage(lang) {
+        document.body.classList.add('lang-updating');
+        var dict = translations[lang] || translations.es;
+        var resolved = translations[lang] ? lang : 'es';
+        document.documentElement.setAttribute('lang', resolved);
+        localStorage.setItem('lang', resolved);
+
+        document.querySelectorAll('[data-i18n]').forEach(function (el) {
+          var key = el.getAttribute('data-i18n');
+          if (dict[key]) {
+            el.textContent = dict[key];
+          }
+        });
+
+        document.querySelectorAll('[data-i18n-placeholder]').forEach(function (el) {
+          var key = el.getAttribute('data-i18n-placeholder');
+          if (dict[key]) {
+            el.setAttribute('placeholder', dict[key]);
+          }
+        });
+
+        langButtons.forEach(function (btn) {
+          btn.classList.toggle('is-active', btn.getAttribute('data-lang') === resolved);
+        });
+
+        window.setTimeout(function () {
+          document.body.classList.remove('lang-updating');
+        }, 180);
+
+        if (langSwitch) {
+          langSwitch.style.setProperty('--lang-offset', resolved === 'en' ? 'calc(50% + 2px)' : '2px');
+        }
+      }
+
+      function detectPreferredLang() {
+        var stored = localStorage.getItem('lang');
+        if (stored) return stored;
+        var navLang = (navigator.language || navigator.userLanguage || 'es').toLowerCase();
+        if (navLang.indexOf('en') === 0) return 'en';
+        return 'es';
+      }
+
+      var stored = detectPreferredLang();
+      langButtons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          applyLanguage(btn.getAttribute('data-lang'));
+        });
+      });
+
+      applyLanguage(stored);
+
+      window.appTranslations = translations;
+      window.t = function (key) {
+        var lang = localStorage.getItem('lang') || detectPreferredLang() || 'es';
+        return (translations[lang] && translations[lang][key]) || translations.es[key] || key;
+      };
+    })();
+  </script>
+  <script>
+    (function () {
+      var form = document.querySelector('[data-formspree]');
+      if (!form) return;
+      var statusEl = form.querySelector('.form-status');
+      var submitBtn = form.querySelector('button[type="submit"]');
+
+      function setStatus(messageKey, type) {
+        if (!statusEl) return;
+        statusEl.textContent = window.t ? window.t(messageKey) : messageKey;
+        statusEl.classList.remove('is-error', 'is-success');
+        if (type === 'error') {
+          statusEl.classList.add('is-error');
+        } else if (type === 'success') {
+          statusEl.classList.add('is-success');
+        }
+      }
+
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        var endpoint = form.getAttribute('action');
+        if (!endpoint || endpoint.indexOf('FORM_ID') !== -1) {
+          setStatus('contact.form.statusConfig', 'error');
+          return;
+        }
+
+        var formData = new FormData(form);
+        setStatus('contact.form.statusSending');
+        if (submitBtn) submitBtn.disabled = true;
+
+        fetch(endpoint, {
+          method: 'POST',
+          body: formData,
+          headers: { 'Accept': 'application/json' }
+        })
+          .then(function (response) {
+            if (response.ok) {
+              setStatus('contact.form.statusSuccess', 'success');
+              form.reset();
+            } else {
+              setStatus('contact.form.statusError', 'error');
+            }
+          })
+          .catch(function () {
+            setStatus('contact.form.statusError', 'error');
+          })
+          .finally(function () {
+            if (submitBtn) submitBtn.disabled = false;
+          });
+      });
+    })();
+  </script>
+</body>
+</html>
+
+
+
+
